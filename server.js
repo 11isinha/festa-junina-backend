@@ -3,6 +3,9 @@ const cors = require('cors');
 const logger = require('./middlewares/logger');
 const errorHandler = require('./middlewares/errorHandler');
 const app = express();
+const pedidosRoutes = require('./routes/pedidos');
+
+app.use('/api', pedidosRoutes);
 
 
 
